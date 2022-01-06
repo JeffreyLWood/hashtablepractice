@@ -165,4 +165,5 @@ const sifter = (string) => {
 };
 
 //returns true if each char is unique, false otherwise, uses hashtable
-sifter("horse");
+sifter("horse"); //true
+sifter("baboon"); //false
