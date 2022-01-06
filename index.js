@@ -1,13 +1,3 @@
-/*
-const collection = new Map()
-collection.set('france', '12')
-collection.set('england', '2')
-
-for(let value of collection){
-  console.log(value)
-}
-*/
-
 class HashTable {
   constructor() {
     this.table = new Array(127);
@@ -75,40 +65,11 @@ class HashTable {
   }
 }
 
-const ht = new HashTable();
-
-ht.set("Canada", 300);
-ht.set("France", 100);
-ht.set("Spain", 110);
-ht.set("ǻ", 122);
-ht.set("ǻ", 123);
-ht.set("ǻ", 124);
-
-//ht.display()
-
-//Implement a function which determine whether or not a string is made of entirely unique characters.
-
-//eg: horse = true & babboon = false
-/*
-  const sifter = (string) => {
-  let table = {}
-  table.depth = 0
-  let hash = 0
-  let count = 1
-  for(let i = 0; i < string.length; i++){
-    if(!table[string.charCodeAt(i)]){
-      table[string.charCodeAt(i)] = [string[i] : ]
-    }
-    else {
-      table[string.charCodeAt(i)] = `${string[i]} : ${count++}`
-    }
-  }
-  return table
-  }*/
-
+// Sifter function
 const sifter = (string) => {
   let length = string.length;
 
+  //Variation on Hashtable for Sifter function
   class HashTable {
     constructor() {
       this.table = new Array(length);
